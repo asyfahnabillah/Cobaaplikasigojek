@@ -6,362 +6,681 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <LinearLayout
-        android:id="@+id/toolbar"
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:background="@color/green"
-        android:padding="8dp"
-        android:weightSum="100">
-
-
-        <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:hint="Cari layanan, makanan &amp; tujuan"
-            android:drawableLeft="@drawable/ic_baseline_search_24"
-            android:background="@drawable/et_search"
-            android:padding="8dp"
-            android:layout_weight="99"
-            />
-
-        <ImageView
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:src="@drawable/ic_baseline_person_24"
-            android:background="@drawable/btn_profile"
-            app:tint="@color/green"
-            android:layout_marginStart="8dp"
-            android:layout_weight="1"/>
-
-    </LinearLayout>
-    <LinearLayout
-        android:id="@+id/saldo"
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/toolbar"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:background="@color/blue"
-        android:padding="8dp"
-        android:weightSum="100"
-        android:layout_marginTop="8dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp">
-
-
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:background="@drawable/kotak"
-            android:padding="8dp"
-            android:layout_weight="10"
-            >
-        <ImageView
-            android:src="@drawable/ic_gopay_logo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="8dp"
-            android:text="Rp.109.048.000"
-
-            />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="8dp"
-            android:text="Klik &amp; cek riwayat"
-            android:textColor="@color/green"
-
-            />
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_weight="30"
-            android:gravity="center">
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/ic_baseline_arrow_upward_24"
-                android:background="@drawable/kotak"
-                android:padding="1dp"
-                />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Bayar"
-
-                />
-
-
-
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_weight="30"
-            android:gravity="center">
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/ic_baseline_add_24"
-                android:background="@drawable/kotak"
-                android:padding="1dp"
-                />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Isi Saldo"
-
-                />
-        </LinearLayout>
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_weight="30"
-        android:gravity="center">
-
-        <ImageView
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:src="@drawable/explore"
-            android:background="@drawable/kotak"
-            android:padding="1dp"
-            />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Explore"
-
-            />
-    </LinearLayout>
-
-
-    </LinearLayout>
+        app:layout_constraintTop_toTopOf="parent">
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/pilihan"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/saldo"
-            app:layout_constraintEnd_toEndOf="parent">
+            android:orientation="vertical">
 
-        <ImageView
-            android:id="@+id/goride"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/goride"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toStartOf="@id/gocar"/>
-
-        <TextView
-            android:id="@+id/goridetext"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Goride"
-            app:layout_constraintStart_toStartOf="@id/goride"
-            app:layout_constraintEnd_toEndOf="@id/goride"
-            app:layout_constraintTop_toBottomOf="@id/goride"/>
-
-            <ImageView
-                android:id="@+id/gocar"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/gocar"
-                app:layout_constraintStart_toEndOf="@id/goride"
-                app:layout_constraintEnd_toStartOf="@id/gofood"/>
-
-            <TextView
-                android:id="@+id/gocartext"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Gocar"
-                app:layout_constraintStart_toStartOf="@id/gocar"
-                app:layout_constraintEnd_toEndOf="@id/gocar"
-                app:layout_constraintTop_toBottomOf="@id/gocar"/>
-            <ImageView
-                android:id="@+id/gofood"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/gofood"
-                app:layout_constraintStart_toEndOf="@id/gocar"
-                app:layout_constraintEnd_toStartOf="@id/gosend"/>
-            <TextView
-                android:id="@+id/gofoodtext"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Gofood"
-                app:layout_constraintStart_toStartOf="@id/gofood"
-                app:layout_constraintEnd_toEndOf="@id/gofood"
-                app:layout_constraintTop_toBottomOf="@id/gofood"/>
-            <ImageView
-                android:id="@+id/gosend"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/gosend"
-                app:layout_constraintStart_toEndOf="@id/gofood"
-                app:layout_constraintEnd_toEndOf="parent"/>
-            <TextView
-                android:id="@+id/gosendtext"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Gosend"
-                app:layout_constraintStart_toStartOf="@id/gosend"
-                app:layout_constraintEnd_toEndOf="@id/gosend"
-                app:layout_constraintTop_toBottomOf="@id/gosend"/>
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/pilihan2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/pilihan"
-        app:layout_constraintEnd_toEndOf="parent">
-
-        <ImageView
-            android:id="@+id/gomart"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/gomart"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toStartOf="@id/gopulsa"/>
-
-        <TextView
-            android:id="@+id/gomarttext"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Gomart"
-            app:layout_constraintStart_toStartOf="@id/gomart"
-            app:layout_constraintEnd_toEndOf="@id/gomart"
-            app:layout_constraintTop_toBottomOf="@id/gomart"/>
-
-        <ImageView
-            android:id="@+id/gopulsa"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/gopulsa"
-            app:layout_constraintStart_toEndOf="@id/gomart"
-            app:layout_constraintEnd_toStartOf="@id/cekin"/>
-
-        <TextView
-            android:id="@+id/gopulsatext"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="gopulsa"
-            app:layout_constraintStart_toStartOf="@id/gopulsa"
-            app:layout_constraintEnd_toEndOf="@id/gopulsa"
-            app:layout_constraintTop_toBottomOf="@id/gopulsa"/>
-        <ImageView
-            android:id="@+id/cekin"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/cekin"
-            app:layout_constraintStart_toEndOf="@id/gopulsa"
-            app:layout_constraintEnd_toStartOf="@id/lainnya"/>
-        <TextView
-            android:id="@+id/cekintext"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Check-In"
-            app:layout_constraintStart_toStartOf="@id/cekin"
-            app:layout_constraintEnd_toEndOf="@id/cekin"
-            app:layout_constraintTop_toBottomOf="@id/cekin"/>
-        <ImageView
-            android:id="@+id/lainnya"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/lainnya"
-            app:layout_constraintStart_toEndOf="@id/cekin"
-            app:layout_constraintTop_toBottomOf="@id/gosend"
-            app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginTop="16dp"/>
-        <TextView
-            android:id="@+id/lainnyatext"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Lainnya"
-            app:layout_constraintStart_toStartOf="@id/lainnya"
-            app:layout_constraintEnd_toEndOf="@id/lainnya"
-            app:layout_constraintTop_toBottomOf="@id/lainnya"
-            android:layout_marginTop="14dp"/>
-
-        <androidx.cardview.widget.CardView
-            implementation("androidx.cardview:cardview:1.0.0")
-            android:id="@+id/cv_goclub"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@+id/pilihan2"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
-            app:cardCornerRadius="10dp"
-            app:cardElevation="4dp">
             <LinearLayout
+                android:id="@+id/toolbar"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:padding="4dp">
-                <ImageView
-                    android:layout_weight="20"
-                    android:layout_width="64dp"
-                    android:layout_height="64dp"
-                    android:scaleY="3"
-                    android:scaleX="3"
-                    android:src="@drawable/ic_goclub_vertical_1"
-                    android:padding="12dp" />
-                <LinearLayout
-                    android:layout_weight="60"
+                android:layout_height="wrap_content"
+                android:background="@color/green"
+                android:padding="8dp"
+                android:weightSum="100"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+                <EditText
                     android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
+                    android:layout_height="wrap_content"
+                    android:layout_weight="99"
+                    android:autofillHints=""
+                    android:background="@drawable/et_search"
+                    android:drawableStart="@drawable/ic_baseline_search_24"
+                    android:hint="@string/cari_layanan_makanan_amp_tujuan"
+                    android:inputType="text"
+                    android:padding="8dp" />
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_profile"
+                    android:contentDescription="@string/icon_gopay"
+                    android:src="@drawable/ic_baseline_person_24"
+                    app:tint="@color/green" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/saldo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@color/blue"
+                android:baselineAligned="false"
+                android:orientation="horizontal"
+                android:padding="8dp"
+                android:weightSum="100"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="10"
+                    android:background="@drawable/kotak"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/logo_gopay"
+                        android:src="@drawable/ic_gopay_logo" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="193 XP lagi ada Harta Karun"/>
-                    <ProgressBar
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:progress="7"
-                        style="@style/Widget.AppCompat.ProgressBar.Horizontal"/>
-                    <LinearLayout
+                        android:text="@string/rp_109_048_000"
+                        android:textSize="12sp"
+
+                        />
+
+                    <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:orientation="horizontal">
-                        <ImageView
-                            android:layout_width="16dp"
-                            android:layout_height="16dp"
-                            android:src="@drawable/ic_hourglass_done_svgrepo_com"/>
+                        android:text="@string/klik_amp_cek_riwayat"
+                        android:textColor="@color/green"
+                        android:textSize="12sp"
+
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="30"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/kotak"
+                        android:contentDescription="@string/bayarfoto"
+                        android:padding="1dp"
+                        android:src="@drawable/ic_baseline_arrow_upward_24" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/bayar"
+
+                        />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="30"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/kotak"
+                        android:contentDescription="@string/topupfoto"
+                        android:padding="1dp"
+                        android:src="@drawable/ic_baseline_add_24" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/isi_saldo"
+
+
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="30"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:background="@drawable/kotak"
+                        android:contentDescription="@string/eksplore"
+                        android:padding="1dp"
+                        android:src="@drawable/explore" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/explore"
+
+                        />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/pilihan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/saldo">
+
+                <ImageView
+                    android:id="@+id/goride"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/gomotor"
+                    android:src="@drawable/goride"
+                    app:layout_constraintEnd_toStartOf="@id/gocar"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/goridetext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/goride"
+                    app:layout_constraintEnd_toEndOf="@id/goride"
+                    app:layout_constraintStart_toStartOf="@id/goride"
+                    app:layout_constraintTop_toBottomOf="@id/goride" />
+
+                <ImageView
+                    android:id="@+id/gocar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/gomobil"
+                    android:src="@drawable/gocar"
+                    app:layout_constraintEnd_toStartOf="@id/gofood"
+                    app:layout_constraintStart_toEndOf="@id/goride"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/gocartext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/gocar"
+                    app:layout_constraintEnd_toEndOf="@id/gocar"
+                    app:layout_constraintStart_toStartOf="@id/gocar"
+                    app:layout_constraintTop_toBottomOf="@id/gocar" />
+
+                <ImageView
+                    android:id="@+id/gofood"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/gomakan"
+                    android:src="@drawable/gofood"
+                    app:layout_constraintEnd_toStartOf="@id/gosend"
+                    app:layout_constraintStart_toEndOf="@id/gocar"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/gofoodtext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/gofood"
+                    app:layout_constraintEnd_toEndOf="@id/gofood"
+                    app:layout_constraintStart_toStartOf="@id/gofood"
+                    app:layout_constraintTop_toBottomOf="@id/gofood" />
+
+                <ImageView
+                    android:id="@+id/gosend"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/gobarang"
+                    android:src="@drawable/gosend"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/gofood"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/gosendtext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/gosend"
+                    app:layout_constraintEnd_toEndOf="@id/gosend"
+                    app:layout_constraintStart_toStartOf="@id/gosend"
+                    app:layout_constraintTop_toBottomOf="@id/gosend" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/pilihan2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/pilihan">
+
+                <ImageView
+                    android:id="@+id/gomart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/gomini"
+                    android:src="@drawable/gomart"
+                    app:layout_constraintEnd_toStartOf="@id/gopulsa"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/gomarttext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/gomart"
+                    app:layout_constraintEnd_toEndOf="@id/gomart"
+                    app:layout_constraintStart_toStartOf="@id/gomart"
+                    app:layout_constraintTop_toBottomOf="@id/gomart" />
+
+                <ImageView
+                    android:id="@+id/gopulsa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/gopul"
+                    android:src="@drawable/gopulsa"
+                    app:layout_constraintEnd_toStartOf="@id/cekin"
+                    app:layout_constraintStart_toEndOf="@id/gomart"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/gopulsatext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/gopulsa"
+                    app:layout_constraintEnd_toEndOf="@id/gopulsa"
+                    app:layout_constraintStart_toStartOf="@id/gopulsa"
+                    app:layout_constraintTop_toBottomOf="@id/gopulsa" />
+
+                <ImageView
+                    android:id="@+id/cekin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/gocek"
+                    android:src="@drawable/cekin"
+                    app:layout_constraintEnd_toStartOf="@id/lainnya"
+                    app:layout_constraintStart_toEndOf="@id/gopulsa"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/cekintext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/check_in"
+                    app:layout_constraintEnd_toEndOf="@id/cekin"
+                    app:layout_constraintStart_toStartOf="@id/cekin"
+                    app:layout_constraintTop_toBottomOf="@id/cekin" />
+
+                <ImageView
+                    android:id="@+id/lainnya"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:contentDescription="@string/menulain"
+                    android:src="@drawable/lainnya"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/cekin"
+                    app:layout_constraintTop_toBottomOf="@id/gosend"
+                    tools:ignore="NotSibling" />
+
+                <TextView
+                    android:id="@+id/lainnyatext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:text="@string/lainnya"
+                    app:layout_constraintEnd_toEndOf="@id/lainnya"
+                    app:layout_constraintStart_toStartOf="@id/lainnya"
+                    app:layout_constraintTop_toBottomOf="@id/lainnya" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_goclub"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="4dp"
+                app:layout_constraintTop_toBottomOf="@+id/pilihan2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="4dp">
+
+                    <ImageView
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:layout_weight="20"
+                        android:contentDescription="@string/bintang"
+                        android:padding="12dp"
+                        android:scaleX="3"
+                        android:scaleY="3"
+                        android:src="@drawable/ic_goclub_vertical_1" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="60"
+                        android:orientation="vertical">
+
                         <TextView
-                            android:paddingStart="5dp"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Harta Karun bentar lagi hilang"/>
-                    </LinearLayout>
-                </LinearLayout>
-                <ImageButton
-                    android:layout_weight="20"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:backgroundTint="@color/transparent"
-                    android:src="@drawable/ic_baseline_arrow_forward_ios_24"/>
-            </LinearLayout>
-        </androidx.cardview.widget.CardView>
+                            android:text="@string/_193_xp_lagi_ada_harta_karun" />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+                        <ProgressBar
+                            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:progress="7" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            tools:ignore="UseCompoundDrawables">
+
+                            <ImageView
+                                android:layout_width="16dp"
+                                android:layout_height="16dp"
+                                android:contentDescription="@string/jampasir"
+                                android:src="@drawable/ic_hourglass_done_svgrepo_com" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingStart="5dp"
+                                android:paddingEnd="5dp"
+                                android:text="@string/harta_karun_bentar_lagi_hilang" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="20"
+                        android:backgroundTint="@color/transparent"
+                        android:contentDescription="@string/panahhh"
+                        android:src="@drawable/ic_baseline_arrow_forward_ios_24" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/akses"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/akses_cepat"
+                app:layout_constraintStart_toStartOf="@id/cv_goclub"
+                app:layout_constraintTop_toBottomOf="@id/cv_goclub" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/voucher"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="4dp"
+                app:layout_constraintTop_toBottomOf="@id/akses">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="4dp">
+
+                    <ImageView
+                        android:layout_width="34dp"
+                        android:layout_height="34dp"
+                        android:layout_weight="20"
+                        android:contentDescription="@string/promofoto"
+                        android:padding="12dp"
+                        android:scaleX="3"
+                        android:scaleY="3"
+                        android:src="@drawable/vocher" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="60"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/ada_voucher_nganggur_nih" />
+                    </LinearLayout>
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="20"
+                        android:backgroundTint="@color/transparent"
+                        android:contentDescription="@string/panahh"
+                        android:src="@drawable/ic_baseline_arrow_forward_ios_24" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/restoran"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="4dp"
+                app:layout_constraintTop_toBottomOf="@id/voucher">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="4dp">
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_weight="20"
+                        android:contentDescription="@string/resto"
+                        android:padding="12dp"
+                        android:scaleX="3"
+                        android:scaleY="3"
+                        android:src="@drawable/restoran" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="60"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/restoran_terdekat" />
+                    </LinearLayout>
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="20"
+                        android:backgroundTint="@color/transparent"
+                        android:contentDescription="@string/panahhhh"
+                        android:src="@drawable/ic_baseline_arrow_forward_ios_24" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                app:cardCornerRadius="42dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/restoran"
+                app:layout_constraintTop_toBottomOf="@id/restoran">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/banner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="32dp"
+                        android:contentDescription="@string/banneriklan"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/banner"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/restoran"
+                        tools:ignore="NotSibling" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/textiklan"
+                        app:layout_constraintTop_toBottomOf="@id/banner"
+                        tools:ignore="MissingConstraints" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/teksiklanlagi"
+                        app:layout_constraintTop_toBottomOf="@id/banner"
+                        tools:ignore="MissingConstraints" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/teksiklanlagidong"
+                        app:layout_constraintTop_toBottomOf="@id/banner"
+                        tools:ignore="MissingConstraints" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </androidx.cardview.widget.CardView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:weightSum="100"
+        android:id="@+id/tab"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:padding="16dp"
+        android:baselineAligned="false">
+        <LinearLayout
+            android:layout_weight="25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            tools:ignore="UseCompoundDrawables">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_home_svgrepo_com"
+                app:tint="@color/green"
+                android:contentDescription="@string/tombol" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/green"
+                android:text="@string/home"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            tools:ignore="UseCompoundDrawables">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_discount_svgrepo_com"
+                app:tint="@color/grey"
+                android:contentDescription="@string/lambangpromo" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/grey"
+                android:text="@string/promotext"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            tools:ignore="UseCompoundDrawables">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_tasks_app_svgrepo_com"
+                app:tint="@color/grey"
+                android:contentDescription="@string/listfoto" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/grey"
+                android:text="@string/pesanantext"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            tools:ignore="UseCompoundDrawables">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_chat_svgrepo_com"
+                app:tint="@color/grey"
+                android:contentDescription="@string/chatfoto" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/grey"
+                android:text="@string/chattext"
+                tools:ignore="TooManyViews" />
+        </LinearLayout>
+
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

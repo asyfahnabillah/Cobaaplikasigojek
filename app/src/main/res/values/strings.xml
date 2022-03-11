@@ -1,3 +1,123 @@
 <resources>
     <string name="app_name">My Application</string>
+    <string name="cari_layanan_makanan_amp_tujuan"><![CDATA[Cari layanan, makanan & tujuan]]></string>
+    <string name="icon_gopay">icon-gopay</string>
+    <string name="logo_gopay">logo-gopay</string>
+    <string name="rp_109_048_000">Rp.109.048.000</string>
+    <string name="klik_amp_cek_riwayat"><![CDATA[Klik & cek riwayat]]></string>
+
+    <string name="bayar">Bayar</string>
+
+    <string name="isi_saldo">Isi Saldo</string>
+
+    <string name="explore">Explore</string>
+
+    <string name="goride">Goride</string>
+
+    <string name="gocar">Gocar</string>
+
+    <string name="gofood">Gofood</string>
+
+    <string name="gosend">Gosend</string>
+
+    <string name="gomart">Gomart</string>
+
+    <string name="gopulsa">gopulsa</string>
+
+    <string name="check_in">Check-In</string>
+
+    <string name="lainnya">Lainnya</string>
+
+    <string name="_193_xp_lagi_ada_harta_karun">193 XP lagi ada Harta Karun</string>
+
+    <string name="harta_karun_bentar_lagi_hilang">Harta Karun bentar lagi hilang</string>
+
+    <string name="akses_cepat">Akses Cepat</string>
+
+    <string name="ada_voucher_nganggur_nih">Ada voucher nganggur, nih</string>
+
+    <string name="restoran_terdekat">Restoran terdekat</string>
+
+    <string name="banneriklan">banner</string>
+    <string name="textiklan">Festival Idaman Perempuan!</string>
+    <string name="teksiklanlagi">Temukan kebutuhan cantik-mu hemat pakai Gopay</string>
+    <string name="teksiklanlagidong">dengan cashback 50%. klik</string>
+    <string name="tombol">gambar</string>
+    <string name="home">Beranda</string>
+    <string name="lambangpromo">promo</string>
+    <string name="promotext">Promo</string>
+    <string name="listfoto">foto</string>
+    <string name="pesanantext">pesanan</string>
+    <string name="chatfoto">Chat</string>
+    <string name="chattext">Chat</string>
+    <string name="bayarfoto">Bayar</string>
+    <string name="topupfoto">topup</string>
+    <string name="eksplore">Explore</string>
+    <string name="gomotor">Goride</string>
+    <string name="gomobil">Gocar</string>
+    <string name="gomakan">Gofood</string>
+    <string name="gobarang">Gosend</string>
+    <string name="gomini">Gomart</string>
+    <string name="gopul">Gopulsa</string>
+    <string name="gocek">Check-In</string>
+    <string name="menulain">Lainnya</string>
+    <string name="bintang">bintangfoto</string>
+    <string name="jampasir">jampasir</string>
+    <string name="panahhh">panah</string>
+    <string name="promofoto">promo</string>
+    <string name="panahh">panahh</string>
+    <string name="resto">resto</string>
+    <string name="panahhhh">panahhhh</string>
+    <string name="skincare">Skincare</string>
+    <string name="keranjang">keranjang</string>
+    <string name="chat">Chat</string>
+    <string name="iklan">iklan</string>
+    <string name="peduli">peduli</string>
+    <string name="pedulilindungi">Peduli Lindungi</string>
+    <string name="pulsa">pulsa</string>
+    <string name="pulsa_tagihan_amp_hiburan"><![CDATA[Pulsa, Tagihan & Hiburan]]></string>
+    <string name="market">market</string>
+    <string name="shopee_supermarket">Shopee Supermarket</string>
+    <string name="mall">mall</string>
+    <string name="shopee_malltext">Shopee Mall</string>
+    <string name="bank">bank</string>
+    <string name="promo_banktext">Promo Bank</string>
+    <string name="pilihlokalfoto">pilihlokal</string>
+    <string name="shopee_pilih_lokaltext">Shopee Pilih Lokal</string>
+    <string name="dealsfoto">Deals</string>
+    <string name="voucher_dealstext">Voucher Deals</string>
+    <string name="freefoto">free</string>
+    <string name="gratis_voucher_amp_ongkirtext"><![CDATA[Gratis Voucher & Ongkir]]></string>
+    <string name="gamesfoto">games</string>
+    <string name="shopee_gamestext">Shopee Games</string>
+    <string name="codfoto">cod</string>
+    <string name="bayar_di_tempattext">Bayar Di Tempat</string>
+    <string name="foodfoto">food</string>
+    <string name="shopee_foodtext">Shopee Food</string>
+    <string name="lebayfoto">lebayfoto</string>
+    <string name="murah_lebay">Murah Lebay</string>
+    <string name="murah_lebaytext">Murah Lebay</string>
+    <string name="elektronikfoto">elektronik</string>
+    <string name="elektronik_100_oritext">Elektronik 100 % ORI</string>
+    <string name="semua_promofoto">semua_promo</string>
+    <string name="semua_promotext">Semua Promo</string>
+    <string name="in_fashionfoto">In_fashion</string>
+    <string name="infashiontext">InFashion</string>
+    <string name="in_fashion">In_fashion</string>
+    <string name="iklaan2foto">iklaan2</string>
+    <string name="flashsalefoto">flashsale</string>
+    <string name="lihat_lainnyatext">Lihat Lainnya</string>
+    <string name="jam2foto">jam2</string>
+    <string name="sepatufoto">sepatu</string>
+    <string name="serumfoto">serum</string>
+    <string name="feedfoto">feed</string>
+    <string name="feedtext">Feed</string>
+    <string name="shopee_livetext">Shopee Live</string>
+    <string name="notificationstext">notifications</string>
+    <string name="profiletext">Profile</string>
+    <string name="scanfoto">scan</string>
+    <string name="walletfoto">wallet</string>
+    <string name="rp_16_000_000text">Rp.16.000.000.000</string>
+    <string name="koinfoto">koin</string>
+    <string name="rp_16_000_000textt">Rp.16.000.000</string>
 </resources>
