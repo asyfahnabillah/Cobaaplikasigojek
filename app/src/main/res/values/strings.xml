@@ -120,4 +120,6 @@
     <string name="rp_16_000_000text">Rp.16.000.000.000</string>
     <string name="koinfoto">koin</string>
     <string name="rp_16_000_000textt">Rp.16.000.000</string>
+    <string name="gojektext">gojek</string>
+    <string name="shopeetext">Shopee</string>
 </resources>
